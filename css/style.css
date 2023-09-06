@@ -1,0 +1,781 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 16px;
+	font-family: Montserrat;
+	font-weight: 500;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;}
+
+
+
+
+
+/* NACINAEM NAVBAR */
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+._container{
+	max-width: 1046px;
+	padding: 0 15px;
+	margin: 0 auto;
+	box-sizing: content-box;
+}
+
+.header{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 3;
+
+}
+.header__container{
+	display: flex;
+	min-height: 104px;
+	align-items: center;
+}
+
+@media (max-width: 479px) {
+	.header__container {
+	min-height: 70px;
+	}
+}
+.header__logo{
+	max-width: 140px;
+	height: auto;
+}
+.header__menu{
+	margin: 0 0 0 133px;
+}
+@media (max-width: 992px) {
+	.header__menu{
+		margin: 0 0 0 80px;
+	}
+}
+@media (max-width: 767px) {
+	.header__menu{
+		margin: 0 0 0 40px;
+	}
+}
+@media (max-width: 479px) {
+	.header__menu{
+		margin: 0 0 0 20px;
+	}
+}
+
+.menu{
+	padding: 5px 0;
+}
+.menu__list{
+	flex-wrap: wrap;
+	display: flex;
+}
+.menu__item{
+
+}
+.menu__item:not(:last-child) {
+	margin: 0 30px 0 0;
+}
+
+.menu__link{
+	font-weight: 200;
+	color: #1D4697;
+	line-height: calc(24 / 14 * 100%);
+}
+.link-u{
+	color: #FED10F;
+}
+.flags{
+
+}
+.header__flagtm{
+
+}
+.header__flagru{
+
+}
+.flag__tm{
+
+}
+.flag__ru{
+
+}
+@media (max-width: 479px) {
+	.menu__link{
+		font-size: 18px;
+	}
+}
+
+
+/* OKONCANIE SHAPKI */
+
+/* MAIN */
+.page{
+	flex:1 1 auto;
+}
+.page__main-block{
+
+}
+.page__services {
+	margin: -40px 0 0 0;
+ }
+
+ .page__advantages {
+	
+ }
+
+ .header-block { 
+	text-align: center;
+	letter-spacing: 0.2px;
+ }
+ .header-block__title {
+	line-height: 142%;
+	font-weight: 600;
+	font-size: 40px;
+	color: #112d64;
+  }
+.header-block__title:not(:last-child){
+	margin: 0 0 10px 0;
+}
+
+ .header-block__sub-title {
+	line-height: 142%;
+	color: #1D4697;
+	opacity: 0.8;
+  }
+
+ @media (max-width:992px) {
+	.header-block__sub-title {
+		font-size: 25px;
+	}
+ }
+
+ @media (max-width:767px) {
+	.header-block__sub-title {
+		font-size: 20px;
+	}
+ }
+.main-block{
+	position: relative;
+}
+.main-block__container{
+
+}
+._container{
+
+}
+.main-body_container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main-block__body{
+	margin: 0 30px 0;
+	padding: 150px 0 125px 0;
+	position: relative;
+	z-index: 2;
+	max-width: 409px;
+}
+@media (max-width: 992px) {
+	.main-block__body{
+		padding: 100px 0 125px 0;
+	}
+}
+
+@media (max-width: 479px) {
+	.main-block__body{
+		padding: 100px 0 80px 0;
+	}
+}
+
+@media (max-width: 479px) {
+	.img__body{
+		display: none;
+	}
+}
+
+.main-block__body > *:not(:last-child) {
+	margin: 0 0 15px 0;
+}
+
+.main-block__title{
+	color: #112d64;
+	font-size: 50px;
+	line-height: calc(50 / 50 * 100%);
+	letter-spacing: 0.2;
+	font-weight: 600;
+}
+@media (max-width: 479px) {
+	.main-block__title{
+		font-size: 40px;
+	}
+}
+.main-block__text{
+	color:#1D4697;
+	font-size: 20px;
+	line-height: 158%;
+}
+.main-block__buttons{
+	display: inline-flex;
+}
+.main-block__button{
+	background: #1D4697;
+	border-radius: 37px;
+	opacity: 0.8;
+	color: white;
+	display: flex;
+	min-height: 48px;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 0.3;
+	padding: 0 20px;
+	line-height: 200%;
+	text-align: center;
+}
+.img__body1{
+	border-radius: 20px;
+	width: 100%;
+    height: auto;
+}
+/* OKONCANIE MAIN CONAINER */
+
+
+/* СЕРВИСЫ НАЧАЛО  */
+
+.services {
+ }
+.services__container { }
+.services__body {
+	display: flex;
+	flex-wrap: wrap;
+ }
+
+ @media (min-width:670px){
+	.services__body {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+	}
+ }
+.services__column {
+	flex: 0 1 25%;
+	height: 100%;
+ }
+
+
+@media (min-width:670px){
+	.services__column {
+	padding: 0 5px;
+	}
+}
+
+
+@media (max-width:992px) {
+	.services__column{
+		flex:0 1 50%;
+	}
+	.services__column:not(:last-child){
+	margin: 0 0 25px 0;
+}
+}
+
+.services__item {
+	height: 100%;
+	border-radius: 20px;
+	box-shadow: 0 23px 29px rgba(0, 0, 0, 0.07);
+	background-color: white;
+	padding: 15px;
+	align-items: center;
+	text-align: center;
+ }
+ @media (max-width:479px) {
+	.services__item {
+	padding: 5px;
+
+	}
+
+ }
+
+
+.item-service { }
+.item-service> not:(:last-child) {
+	margin: 0 0 10px 0;
+ }
+
+.item-service__icon {
+
+ }
+ .item-service__icon>img{
+	border-radius: 20px;
+	width: 80px;
+	max-width: 100%;
+	height: auto;
+ }
+ .item-service__icon>img>.poezd {
+	width: 50px;
+	max-width: 100%;
+	height: auto;
+ }
+.item-servise__title {
+	font-weight: 500;
+	letter-spacing: 0.1;
+	font-size: 14px;
+	line-height: 133%;
+ }
+
+/* SERVICE KONEC */
+
+/* ADVANAGES NACALO */
+
+.advantages {
+	padding: 80px 0;
+ }
+
+ @media (max-width:992px) {
+	.advantages {
+	padding: 50px 0;
+	}
+ }
+ 
+ @media (max-width:767px) {
+	.advantages {
+	padding: 40px 0;
+	}
+ }
+
+.advantages__container {
+
+ }
+
+.advantages-header { 
+margin: 0 0 50px 0;
+}
+
+@media (max-width:767px) {
+	.advantages-header { 
+		margin: 0 0 25px 0;
+		}
+}
+.advantages__body {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px -30px;
+ }
+ 
+.advantages__column {
+	padding: 0 15px;
+	margin: 0 0 30px 0;
+	flex: 0 1 25%;
+ }
+
+ @media (max-width:1020px) {
+	.advantages__column {
+		flex: 0 1 50%;
+	}
+}
+@media (max-width:560px) {
+	.advantages__column {
+		flex: 0 1 100%;
+	}
+}
+.advantages__item {
+	height: 100%;
+	background-color: white;
+	box-shadow: 0 23px 29px rgba(0, 0, 0, 0.07);
+	border-radius: 20px;
+	border:0 solid #6782b7;
+	padding: 20px;
+	font-weight: 700;
+	text-align: center;
+ }
+.advantages__item > *:not(:last-child){
+	margin: 0 0 10px 0;
+}
+
+.advantages__icon {
+	display: flex;
+	padding-bottom: 10px;
+	align-items: flex-end;
+	opacity: 0.7;
+	justify-content: center;
+ }
+.advantages__text {
+	letter-spacing: 0.1px;
+	color: black;
+	font-size: 16px;
+	line-height: 150%;
+ }
+
+
+ /* ADVANTAGES KONEC */
+
+/* about NACALO */
+.about-block{
+	position: relative;
+}
+.about-block__container{
+
+}
+._container{
+
+}
+.about-body_container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.about-block__body{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+@media (max-width: 992px) {
+	.about-block__body{
+		padding: 20px 0 125px 0;
+	}
+}
+
+@media (max-width: 479px) {
+	.about-block__body{
+		padding: 20px 0 80px 0;
+	}
+}
+
+.about-block__body > *:not(:last-child) {
+	margin: 0 0 15px 0;
+}
+.about-block__body-left{
+	text-align: center;
+	letter-spacing: 0.2px;
+}
+
+
+.about-block__title{
+	font-size: 50px;
+	line-height: calc(50 / 50 * 100%);
+	letter-spacing: 0.2;
+	font-weight: 600;
+	color: #112d64;
+}
+.about-block__title:not(:last-child){
+	margin: 0 0 30px 0;
+}
+
+@media (max-width: 479px) {
+	.about-block__title{
+		font-size: 30px;
+	}
+}
+.about-block__text{
+	text-indent: 20px;
+	letter-spacing: 0.3px;
+	color:#1D4697;
+	font-size: 18px;
+	line-height: 158%;
+	text-align: justify;
+}
+@media (max-width: 479px) {
+.about-block__text{
+	font-size: 14px;
+}
+
+}
+
+.about-block__buttons{
+	margin-top: 35px;
+	display: inline-flex;
+}
+.about-block__button{
+	background: #1D4697;
+	border-radius: 37px;
+	opacity: 0.8;
+	color: white;
+	display: flex;
+	min-height: 48px;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 0.3;
+	padding: 0 20px;
+	line-height: 200%;
+	text-align: center;
+}
+
+
+.about-block__column {
+
+	padding: 20px;
+}
+.about-block__item {
+	align-items: center;
+	text-align: center;
+}
+.about-block__image{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 270px;
+	height: 100%;
+	align-items: center;
+	text-align: center;
+
+ }
+.about-block__image>img{
+	border-radius: 20px;
+}
+.about-block__image>video{
+	border-radius: 20px;
+}
+.truck2{
+	margin-top: -15px;
+}
+
+/* ABOUT KONEC */
+
+/* CONTACT NACALO */
+.contact__container {
+
+ }
+
+.contact-header {
+
+ }
+.header-block {
+
+ }
+.header-block__title {
+
+ }
+.header-block__sub-title {
+
+ }
+.contact__body {
+	display: flex;
+	margin-top: -30px;
+ }
+.contact__column {
+	width: 523px;
+	height: auto;
+	flex: 0 1 50%;
+	text-align: center;
+	align-items: center;
+	flex-wrap: wrap;
+
+ }
+
+.c-item{
+	text-align: left;
+	display: inline-block;
+	margin-top: 185px;
+}
+.column-2{
+	z-index: 1;
+	margin-left: -100px;
+ }
+ @media (max-width: 1018px) {
+	.column-2{
+		margin-left: -170px;
+	}
+	.column-1{
+		opacity: 0.3;
+	}
+ }
+ @media (max-width: 850px) {
+	 .column-2{
+		 margin-left: -250px;
+		}
+	}
+@media (max-width: 800px) {
+	.column-1{
+		display: none;
+	}
+	.column-2{
+		flex: 0 1 100%;
+		width: auto;
+		margin: 0px;
+		align-items: center;
+		text-align: center;
+		}
+		.c-item{
+			margin-top: 100px;
+		}
+	}
+.item-img{
+	margin-left: 80px;
+ }
+
+.contact__item {
+
+ }
+
+ form>p{
+	padding: 10px;
+ }
+ form>p>input{
+	margin-top: 5px;
+	border-radius: 10px;
+	width: 270px;
+	height: 30px;
+	background-color:white;
+	box-shadow: 0 23px 29px rgba(0, 0, 0, 0.07);
+
+ }
+.c-item>p>button{
+	background: #1D4697;
+	border-radius: 37px;
+	opacity: 0.8;
+	color: white;
+	display: flex;
+	min-height: 48px;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 0.3;
+	margin-top: 10px;
+	margin-left: 85px;
+	padding: 0 20px;
+	line-height: 200%;
+	text-align: center;
+}
+
+.contact__icon {
+	opacity: 0.6;
+ }
+.text-input {
+
+ }
+
+
+
+/* PODWAL */
+.footer {
+
+ }
+.footer__container {
+
+ }
+._container {
+
+ }
+.footer__body {
+	display: flex;
+	flex-wrap: wrap;
+	height: 100%;
+ }
+@media (max-width: 800px) {
+	footer{
+		margin-top: 70px;
+	}
+}
+
+.footer__column {
+	flex: 0 1 20%;
+	margin-left: 15px;
+	flex-wrap: wrap;
+	margin: auto;
+ }
+
+ @media (max-width: 710px) {
+	.footer__column{
+		padding: 20px 10px 20px;
+		flex: 0 1 50%;
+	}
+	.footer__column-mails{
+		/* margin: auto;
+		padding: auto; */
+	}
+ }
+
+.footer__column-phones{
+	display: inline-block;
+}
+.footer__column-mails{
+	display: inline-block;
+	/* margin-right: 20px;
+	margin-left: -30px; */
+}
+.footer__column-address{
+	display: inline-block;
+}
+.footer__column-messangers{
+	display: inline-block;
+}
+.footer__item {
+	
+}
+.item-footer__icon>p {
+	font-size: 10px;
+	margin-top: 10px;
+ }
+.item-phones{
+	display: flex;
+ }
+.icon-phone{
+	margin-top: 23px;
+	width: 15%;
+ }
+.item-footer__numbers{
+	font-size: 14px;
+	width: 85%;
+}
+.item-mails{
+	display: flex;
+}
+.icon-mail{
+	margin-right: 10px;
+	width: 15%;
+}
+.item-footer__mails{
+	font-size: 14px;
+	width: 85%;
+	margin-top: -18px;
+}
+.item-address{
+	display: flex;
+	margin-bottom: -13px;
+}
+.icon-address{
+	width: 10%;
+	margin-right: 5px;
+}
+.item-footer__address{
+	height: 70px;
+	font-size: 14px;
+	width: 90%;
+	margin-top: -30px;
+}
+.icon-messanger{
+	font-size: 14px;
+}
